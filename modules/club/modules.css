@@ -1,0 +1,201 @@
+<html>
+<head>
+<style>
+
+body {
+    background-color: lightblue;
+  /*  background-image: url("3.jpg");*/
+    font color: black;
+}
+
+td{
+
+	font-size: 120%;
+	color: black;
+	
+	
+}
+
+
+
+div{
+	
+
+	font-size: 150%; 
+	color: black;
+}
+.name{
+		font-size: 250%;
+		
+		
+	}
+
+.des{
+	font-size: 35%;
+	background-color: red;
+
+	
+}
+
+
+
+
+
+.description{
+		font-size: 60%;
+		border-style: solid;
+		margin: auto;
+		height: 25%;
+		width: 100%;*/
+		background-color: red; 
+		
+	}
+.c0{
+	
+	border-color: #FFFFFF;
+	
+}
+.c01{
+	border-style: solid;
+	font-size: 80%;
+	color: black;
+	height: 35%;
+}
+
+.c1{
+	
+	border-color: #FFFFFF;
+}
+.c11{
+	border-style: solid;
+	font-size: 60%;
+	color: black;
+	height: 35%;
+}
+
+.c2{
+	
+	border-color: #FFFFFF;
+	
+}
+.c21{
+	border-style: solid;
+	font-size: 60%;
+	color: black;
+	height: 35%;
+}
+
+.c3{
+	
+	border-color: #FFFFFF;
+	
+}
+.c31{
+	border-style: solid;
+	font-size: 60%;
+	color: black;
+height: 35%;
+}
+
+.c4{
+	
+	border-color: #FFFFFF;
+}
+.c41{
+	border-style: solid;
+	font-size: 60%;
+	color: black;
+	height: 35%;
+}
+
+.c5{
+	
+	border-color: #FFFFFF;
+}
+.c51{
+	border-style: solid;
+	font-size: 60%;
+	color: black;
+		height: 35%;
+}
+
+.c6{
+	
+	border-color: #FFFFFF;
+}
+.c61{
+	border-style: solid;
+	font-size: 60%;
+	color: black;
+	height: 35%;
+}
+
+.c7{
+	
+	border-color: #FFFFFF;
+}
+.c71{
+	border-style: solid;
+	font-size: 60%;
+	color: black;
+	height: 35%;
+}
+
+.c8{
+	
+	border-color: #FFFFFF;
+}
+.c81{
+	border-style: solid;
+	font-size: 60%;
+	color: black;
+	height: 35%;
+}
+
+.c9{
+	
+	border-color: #FFFFFF;
+}
+.c91{
+	border-style: solid;
+	font-size: 60%;
+	color: black;
+	height: 35%;
+}
+
+
+
+
+label{
+	font-size: 120%;
+	color: #254B2E;
+}
+
+input{
+	font-size: 100%;
+	
+}
+
+#leftContent {
+  float:left;
+  width: 50%;
+ /* background-color: #E4E4E4;*/
+ }
+
+ #rightContent {
+   float: right;
+   width: 30%;
+   /*background-color: green;*/
+  }
+
+ #mainContent {
+    width: 30%;
+    float: left;
+    /*background-color: blue;*/
+    margin: 1%;
+    
+  }
+
+</style>
+</head>
+<body>
