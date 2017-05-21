@@ -2,6 +2,8 @@
 
 include_once 'blade/view.members.blade.php';
 include_once '/../../common/class.common.php';
+include_once '/../../modules/club/modules.css';
+$connect = mysqli_connect("localhost","root","","cseku_wpl_2017_education");
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -14,8 +16,11 @@ include_once '/../../common/class.common.php';
 
 <body>
 
+
+
+
 	<div id="header">
-		<label>By : Kazi Masudul Alam</a></label>
+		
 	</div>
 
 	<div id="form">

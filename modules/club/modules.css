@@ -3,7 +3,7 @@
 <style>
 
 body {
-    background-color: lightblue;
+    background-color:		#B8860B;
   /*  background-image: url("3.jpg");*/
     font color: black;
 }
@@ -16,6 +16,36 @@ td{
 	
 }
 
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #2F4F4F;
+    overflow: hidden;
+   	padding-right: 100px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #8FBC8F;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
 
 
 div{
@@ -25,14 +55,18 @@ div{
 	color: black;
 }
 .name{
-		font-size: 250%;
+		font-size: 500%;
+		color: #F5FFFA;
+		text-align: center;
 		
 		
 	}
 
-.des{
-	font-size: 35%;
-	background-color: red;
+.Desc{
+	font-size: 150%;
+	color: #483D8B	;
+	text-align: left;
+	background-color: #EEE8AA; 
 
 	
 }
@@ -41,160 +75,90 @@ div{
 
 
 
-.description{
-		font-size: 60%;
-		border-style: solid;
+.Description{
+		font-size: 100%;
+		/*border-style: solid;*/
 		margin: auto;
-		height: 25%;
-		width: 100%;*/
-		background-color: red; 
-		
+		color: #008080	;
+		/*height: 25%;*/
+		width: 100%;
+		background-color: #EEE8AA; 
+		text-align: left;
 	}
-.c0{
+
+
+.moduleName{
 	
 	border-color: #FFFFFF;
-	
-}
-.c01{
-	border-style: solid;
+	margin: 20px;
+	text-align: center;
+	color: 	#483D8B	;
 	font-size: 80%;
-	color: black;
-	height: 35%;
-}
-
-.c1{
 	
-	border-color: #FFFFFF;
 }
-.c11{
+.content{
 	border-style: solid;
-	font-size: 60%;
-	color: black;
-	height: 35%;
-}
-
-.c2{
-	
-	border-color: #FFFFFF;
-	
-}
-.c21{
-	border-style: solid;
-	font-size: 60%;
-	color: black;
-	height: 35%;
-}
-
-.c3{
-	
-	border-color: #FFFFFF;
-	
-}
-.c31{
-	border-style: solid;
-	font-size: 60%;
-	color: black;
-height: 35%;
-}
-
-.c4{
-	
-	border-color: #FFFFFF;
-}
-.c41{
-	border-style: solid;
-	font-size: 60%;
-	color: black;
-	height: 35%;
-}
-
-.c5{
-	
-	border-color: #FFFFFF;
-}
-.c51{
-	border-style: solid;
-	font-size: 60%;
-	color: black;
-		height: 35%;
-}
-
-.c6{
-	
-	border-color: #FFFFFF;
-}
-.c61{
-	border-style: solid;
-	font-size: 60%;
-	color: black;
-	height: 35%;
-}
-
-.c7{
-	
-	border-color: #FFFFFF;
-}
-.c71{
-	border-style: solid;
-	font-size: 60%;
-	color: black;
-	height: 35%;
-}
-
-.c8{
-	
-	border-color: #FFFFFF;
-}
-.c81{
-	border-style: solid;
-	font-size: 60%;
-	color: black;
-	height: 35%;
-}
-
-.c9{
-	
-	border-color: #FFFFFF;
-}
-.c91{
-	border-style: solid;
-	font-size: 60%;
-	color: black;
-	height: 35%;
+	border-color: #6495ED;
+	font-size: 40%;
+	color: 006400;
+	height: 40%;
+	width:90%;
+	margin: 20px;
+	text-align: center;
 }
 
 
-
-
-label{
-	font-size: 120%;
-	color: #254B2E;
+  .contact{
+  	float: bottom;
+  	text-align: center;
+  }
+.a{
+	color: #B8860B;
 }
 
-input{
-	font-size: 100%;
-	
+.mail{
+background-color: #EEE8AA;
+font-size: 40%;
+text-align: center;
+color: blue;
+}
+ 
+.bottom{
+	background-color: #EEE8AA;
+	font-size: 30%;
+	text-align: center;
+
+}
+
+.date{
+	color: darkblue;
+	background-color: #EEE8AA;
+	text-align: center;
+}
+
+#page-wrap {
+     width: 1000px;
+     margin: 100px auto;
+    /* border: 1px solid;*/
+    /* background-color: yellow;*/
 }
 
 #leftContent {
   float:left;
   width: 50%;
+background-color: #EEE8AA;
  /* background-color: #E4E4E4;*/
  }
 
  #rightContent {
    float: right;
-   width: 30%;
-   /*background-color: green;*/
+   width: 50%;
+   background-color: #EEE8AA;
+   
   }
+   
+ 
 
- #mainContent {
-    width: 30%;
-    float: left;
-    /*background-color: blue;*/
-    margin: 1%;
-    
-  }
 
 </style>
 </head>

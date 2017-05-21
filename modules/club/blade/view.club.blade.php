@@ -56,6 +56,7 @@ if(isset($_POST['update']))
     $Club->setID ($_GET['edit']);
     $Club->setName( $_POST['txtName'] );
     $Club->setDescription( $_POST['txtDes'] );
+    $Club->setMail( $_POST['txtMail'] );
 
 	
 	$_ClubBAO->updateClub($Club);

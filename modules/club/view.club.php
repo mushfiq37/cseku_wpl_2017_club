@@ -23,8 +23,9 @@ if(isset($_POST["save"]))
      $file = addslashes(file_get_contents($_FILES["Image"]["tmp_name"]));
      //$Club->setCoverPhoto($_DB->secureInput('$file'));
      $CreationDate=date("Y/m/d");
+     $mail=$_POST['txtMail'];
 	// $_ClubBAO->createClub($Club);
-	$query="INSERT INTO tbl_Club(ID,Name,CoverPhoto,Description,CreationDate) VALUES('$ID','$Name','$file','$Description','$CreationDate')";
+	$query="INSERT INTO tbl_Club(ID,Name,CoverPhoto,Description,CreationDate,mail) VALUES('$ID','$Name','$file','$Description','$CreationDate','$mail')";
 	if(mysqli_query($connect,$query)){
 		//echo '<script> alert("inserted")</script>';
 	}
@@ -56,6 +57,13 @@ if(isset($_POST["save"]))
 					if(isset($_GET['edit'])) echo $getROW->getName();  ?>" /></td>
 
 				</tr>
+
+				<tr>
+					<td><input type="text" name="txtMail" placeholder="E-mail or phone no." value="<?php 
+					if(isset($_GET['edit'])) echo $getROW->getMail();  ?>" /></td>
+
+				</tr>
+
 				<tr>
 
 					<td><textarea cols="40" rows="5" style="height:200px;width:500px" type="text" name="txtDes" placeholder="Description" value="<?php 
@@ -110,7 +118,7 @@ if(isset($_POST["save"]))
 					</tr>
 					<td>
 						<?php
-						if(isset($_GET['add']))
+						if(isset($_GET['edit']))
 						{
 							?>
 							<button type="submit" name="update">update</button>

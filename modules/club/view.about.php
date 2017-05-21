@@ -87,21 +87,18 @@ function redirect() {
 
     ?>
 
-
-
-<div class="topnav" id="myTopnav">
+    <div class="topnav" id="myTopnav">
   <a href="http://localhost/2017_education-master/modules/club/view.clubpage.php">Home</a>
   <a href="http://localhost/2017_education-master/modules/club/members.php">Members</a>
   <a href="http://localhost/2017_education-master/modules/club/view.about.php">Club Info</a>
 </div>
 
-
-
   <div id="header">
     
   </div>
-  <div id="des">
-    <?php
+
+  <div id = container2>
+  <?php
     //if(isset($_POST["proceed"]))
 //{   
     session_start();
@@ -118,9 +115,10 @@ function redirect() {
 
         <br>
 
-      <div class="Desc">
+      <div class="date">
         <?php
-          echo "About Club";
+          echo "This Club Site is Created at : ";
+          echo $row1['CreationDate'];
         ?>
       </div>
 
@@ -128,104 +126,18 @@ function redirect() {
       <div class="Description">
      
       <?php
-      echo $row1['Description'];
-    }
-
-    ?>
-  </div>
-
-<br>
-
-  <?php
-//print Content
-session_start();
-$t=$_SESSION['variable_name1'];
-$query1 = "SELECT * FROM tbl_club_module WHERE ClubID = '$t'  ";
-$result1 = mysqli_query($connect, $query1);
-    while($row2 = mysqli_fetch_array($result1))
-    {?>
-<div id="container">
-
-  <div id="leftContent">
-
-<div class = "moduleName">
-
-
-<?php
-
-
-      echo $row2['ModuleName'];?>
-        
-      </div>
       
-<div class="content">
-<?php
-echo $row2['Content'];?>
+    }
+ 
+    ?>
 
+
+</div>
+
+    
+
+</div>
   
-</div>
-
-</div>
-</div>
-<?php 
-    }
-
-?>
-
-
-
-
-<div class = "contact">
-
-    <?php
-    //if(isset($_POST["proceed"]))
-//{   
-    session_start();
-    $x=$_SESSION['variable_name1'];
-
-    //echo "no";
-    $query = "SELECT * FROM tbl_club WHERE ID = '$x'";
-    $result = mysqli_query($connect, $query);
-    while($row1 = mysqli_fetch_array($result))
-    {
-      ?>
-      
-     
-
-      
-<div class="a">
-        <?php
-          echo "_________________________";
-        ?>
-      </div>
-
-
-
-      <div class="bottom">
-        <?php
-          echo "Contact Us: ";
-        ?>
-      </div>
-
-      
-      <div class="mail">
-     
-      <?php
-      echo $row1['mail'];
-    }
-
-    ?>
-  </div>
- </div>
-
-	</div>
-
-
-
-</div>
-  <div id = "form">
-
-  </div>
       
   
 
