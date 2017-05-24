@@ -431,6 +431,7 @@ class Club{
     private $_CoverPhoto;
     private $_Description;
     private $_CreationDate;
+    private $_Mail;
 
     public function setID( $ID ) {
         $this->_ID = $ID;
@@ -470,6 +471,14 @@ class Club{
 
     public function getCreationDate() {
         return $this->_CreationDate;
+    }
+
+    public function setMail( $Mail ) {
+        $this->_Mail = $Mail;
+    }
+
+    public function getMail() {
+        return $this->_Mail;
     }
 
 } 
