@@ -54,9 +54,10 @@ Class ClubDAO{
 		$CoverPhoto=$Club->getCoverPhoto();
 		$Description=$Club->getDescription();
 		$CreationDate=$Club->getCreationDate();
+		$mail=$Club->getMail();
 
 
-		$SQL = "INSERT INTO tbl_Club(ID,Name,CoverPhoto,Description,CreationDate) VALUES('$ID','$Name','$CoverPhoto','$Description','$CreationDate')";
+		$SQL = "INSERT INTO tbl_Club(ID,Name,CoverPhoto,Description,CreationDate,mail) VALUES('$ID','$Name','$CoverPhoto','$Description','$CreationDate',$mail)";
 
 		$SQL = $this->_DB->doQuery($SQL);		
 		
@@ -83,6 +84,7 @@ Class ClubDAO{
 	    $this->_Club->setID ( $row['ID']);
 	    $this->_Club->setName( $row['Name'] );
 	    $this->_Club->setDescription( $row['Description'] );
+	    $this->_Club->setMail( $row['mail'] );
 
 
 
@@ -96,7 +98,7 @@ Class ClubDAO{
 	//update an Position object based on its 
 	public function updateClub($Club){
 
-		$SQL = "UPDATE tbl_Club SET Name='".$Club->getName()."', Description='".$Club->getDescription()."' WHERE ID='".$Club->getID()."'";
+		$SQL = "UPDATE tbl_Club SET Name='".$Club->getName()."', Description='".$Club->getDescription()."',mail='".$Club->getMail()."' WHERE ID='".$Club->getID()."'";
 
 
 		$SQL = $this->_DB->doQuery($SQL);
